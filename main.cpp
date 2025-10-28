@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <stdlib.h>
 
 /*bool process_line(std::string line){
 	
@@ -29,8 +30,9 @@ int main(int count , char **args){
 		std::cout << date << std::endl;
 		std::cout.precision(2);
 		std::cout << bit->getValue(date) << std::endl;
-		//falta multiplicar por el valor de l alinea: num
-		
+		std::cout << bit->getValue(date) * atof(num.c_str()) << std::endl;
+		//falta por mirar si en numero se pasa de largo o no
+		//si es 0 por falta de valores, tambien habria que pritear otra cosa
 	}
 
 	delete (bit);
